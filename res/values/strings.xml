@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">fireforest</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="title_activity_main">Fire Forest</string>
+    
+    <string name="turn">Tour</string>
+    <string name="next_turn">Next</string>
+    <string name="line">Lignes</string>
+    <string name="column">Colonnes</string>
+    <string name="density">Densité (1&#8211;10)</string>
+    <string name="sleep">Temporisation (ms)</string>
+    <string name="save">Sauver</string>
+
+</resources>
