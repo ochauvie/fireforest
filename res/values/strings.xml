@@ -11,5 +11,8 @@
     <string name="density">Densité (1&#8211;10)</string>
     <string name="sleep">Temporisation (ms)</string>
     <string name="save">Sauver</string>
+    
+    <string name="tree">Arbres</string>
+    <string name="fire">Feux</string>
 
 </resources>

@@ -79,7 +79,10 @@ public class MainActivity extends Activity implements IPlayTurnListener {
         
         turnView = (TextView) findViewById(R.id.textViewTurn);
         turn = 0;
-        turnView.setText(getString(R.string.turn) + " " + turn);
+        turnView.setText(getString(R.string.turn) + ": " + turn 
+        		+ " - " + getString(R.string.tree) + ": " + grid.getTree()
+        		+ " - " + getString(R.string.fire) + ": " + grid.getFire());
+        
         
         // Next turn button
         turnButton = (ImageButton) findViewById(R.id.nextTurn);
@@ -112,7 +115,10 @@ public class MainActivity extends Activity implements IPlayTurnListener {
 		adapter = new GridAdapter(MainActivity.this, this.grid);
 		gridView.setAdapter(adapter);
 		adapter.notifyDataSetChanged();
-		turnView.setText(getString(R.string.turn) + " " + turn++);
+		turnView.setText(getString(R.string.turn) + ": " + turn++ 
+        		+ " - " + getString(R.string.tree) + ": " + grid.getTree()
+        		+ " - " + getString(R.string.fire) + ": " + grid.getFire());
+
 		
 		if (this.grid.getFire()==0) {
 			turnButton.setImageResource(R.drawable.start);
